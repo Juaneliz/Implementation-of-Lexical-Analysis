@@ -34,14 +34,17 @@ PATTERN = r'^(b|abb|a*(1b)*1bb)*(a+b1(1|a)*((1|a)*b+a)+|a*1+(b1)*ba((1|a)*ba)*)$
 
 The file has automatized tests so you can review each example by detail.<br>
 ```python
-PATTERN = r'^(b|abb|a*(1b)*1bb)*(a+b1(1|a)*((1|a)*b+a)+|a*1+(b1)*ba((1|a)*ba)*)$'
-
-def parse(string):
-
-    return string.strip()
-
 def accept(string):
+    string = string.strip()
     return bool(re.match(PATTERN, string))
+
+if __name__ == '__main__':
+    inp = str(input())
+    res = accept(inp)
+    if res:
+        print("yes")
+    else:
+        print("no")
 
 ```
 ## Analysis
@@ -49,7 +52,7 @@ def accept(string):
 Through this program as the Regular expression represented is an NFA, the complexity in the program is  O(n) in normal cases. However,  in worst cases the complexity changes through O(n^2).
 
 I used the regex library from python to develop the program. Aswell as some functions to delete blank spaces. (Re — Regular Expression Operations, n.d.).
-I preferred the implementation in prolog. This is because it represents the automata in a structurally efficient way. The regex expression may be better for parsing and representation of lexical analysis. But the complexity changes.
+I preferred the implementation in prolog. This is because it represents the automata in a structurally efficient way. The regex expression may be better for analyzing and representation of lexical analysis. But the complexity changes.
 
 ### References 
 Peckory, G. (2015, December 1). Why use NFAs over DFAs. Stack Overflow. https://stackoverflow.com/questions/33260936/why-use-nfas-over-dfas <br>
