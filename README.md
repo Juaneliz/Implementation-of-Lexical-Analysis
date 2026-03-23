@@ -23,6 +23,34 @@ Some examples of inputs and outputs are:
 - [a,b,b,1,b] > rejected
 - [a,b,1] > rejected
 
+## Regular Expression
+
+The **solution** of the automata represented in a regularf expression looks like this.
+```python
+PATTERN = r'^(b|abb|a*(1b)*1bb)*(a+b1(1|a)*((1|a)*b+a)+|a*1+(b1)*ba((1|a)*ba)*)$'
+```
+
+## Tests
+
+The file has automatized tests so you can review each example by detail.<br>
+```python
+PATTERN = r'^(b|abb|a*(1b)*1bb)*(a+b1(1|a)*((1|a)*b+a)+|a*1+(b1)*ba((1|a)*ba)*)$'
+
+def parse(string):
+
+    return string.strip()
+
+def accept(string):
+    return bool(re.match(PATTERN, string))
+
+```
+## Analysis
+
+Through this program as the Regular expression represented is an NFA, the complexity in the program is  O(n) in normal cases. However,  in worst cases the complexity changes through O(n^2).
+
+I used the regex library from python to develop the program. Asweel as some functions to delete blank spaces. (Re — Regular Expression Operations, n.d.).
+I preferred the implementation in prolog. This is because it represents the automata in a structurally efficient way. The regex expression may be better for parsing and representation of lexical analysis. But the complexity changes.
+
 ### References 
 Peckory, G. (2015, December 1). Why use NFAs over DFAs. Stack Overflow. https://stackoverflow.com/questions/33260936/why-use-nfas-over-dfas <br>
 GeeksforGeeks. (2025, July 12). Difference between DFA and NFA. GeeksforGeeks. https://www.geeksforgeeks.org/theory-of-computation/difference-between-dfa-and-nfa/ <br>
