@@ -3,7 +3,7 @@
 For this evidence, the language chosen was all the possible combinations of ab1.<br>
 The rules were the following:<br>
 - Must have ab1 or 1ba
-- Must end with ba.
+- Must end with ba.<br>
 The **modeling tecnique** used was a Deterministic Finite Automata (DFA) to represents my solutions. DFA was develop because of the predictable and deterministic behavior in its definition presented in (NFA Vs: DFA: Unraveling the Differences in Finite Automaton Models - FasterCapital, 2025)
 <br>By the rules required in the lexical analysis, the DFA was implemented to assure that the AUTOMATA fulfilled the necessary processes.
 
