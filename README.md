@@ -48,13 +48,14 @@ def accept(string):
 
 Through this program as the Regular expression represented is an NFA, the complexity in the program is  O(n) in normal cases. However,  in worst cases the complexity changes through O(n^2).
 
-I used the regex library from python to develop the program. Asweel as some functions to delete blank spaces. (Re — Regular Expression Operations, n.d.).
+I used the regex library from python to develop the program. Aswell as some functions to delete blank spaces. (Re — Regular Expression Operations, n.d.).
 I preferred the implementation in prolog. This is because it represents the automata in a structurally efficient way. The regex expression may be better for parsing and representation of lexical analysis. But the complexity changes.
 
 ### References 
 Peckory, G. (2015, December 1). Why use NFAs over DFAs. Stack Overflow. https://stackoverflow.com/questions/33260936/why-use-nfas-over-dfas <br>
 GeeksforGeeks. (2025, July 12). Difference between DFA and NFA. GeeksforGeeks. https://www.geeksforgeeks.org/theory-of-computation/difference-between-dfa-and-nfa/ <br>
-NFA vs: DFA: Unraveling the Differences in Finite Automaton Models - FasterCapital. (2025, April 6). FasterCapital. https://fastercapital.com/content/NFA-vs--DFA--Unraveling-the-Differences-in-Finite-Automaton-Models.html
+re — Regular expression operations. (n.d.). Python Documentation. https://docs.python.org/3/library/re.html <br>
+NFA vs: DFA: Unraveling the Differences in Finite Automaton Models - FasterCapital. (2025, April 6). FasterCapital. https://fastercapital.com/content/NFA-vs--DFA--Unraveling-the-Differences-in-Finite-Automaton-Models.html <br>
 Lists and Recursion - wiki.visual-prolog.com. (n.d.). https://wiki.visual-prolog.com/index.php?title=Lists_and_Recursion#Tail_Recursion
 
 
