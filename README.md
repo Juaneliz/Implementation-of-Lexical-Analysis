@@ -35,7 +35,7 @@ To transform the regex to an automata goes throguh following steps.
 - A is in this case b|abb| a*(1b)*1bb
 - B is a+b1(1|a)*((1|a)*b+a)+a*1+(b1)*ba((1|a)*ba)*
 First part, being A*, represents the repetition of the blocks seen in the Representation of a. That is why its used the * sign. These represent that it does not matter how many elements you have in the expression, you are still on the initial state.
-The second part divides into two types of paths. First one being a+b1(1|a)*((1|a)*b+a)+ and ends in the final state of q5(Seen in the previous diagram of the automata.. La segunda alternativa corresponde a a*1+(b1)*ba((1|a)*ba)*( Which ends in the final state of q8. The cicles of ab1 are represented through the operators of * and + .
+The second part divides into two types of paths. First one being a+b1(1|a)*((1|a)*b+a)+ and ends in the final state of q5(Seen in the previous diagram of the automata.. Second path is being represented by:a*1+(b1)*ba((1|a)*ba)*( Which ends in the final state of q8. The cicles of ab1 are represented through the operators of * and + .
 ## Tests
 
 The file has automatized tests so you can review each example by detail.<br>
