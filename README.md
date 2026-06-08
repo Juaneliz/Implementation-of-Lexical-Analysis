@@ -9,7 +9,7 @@ The **modeling tecnique** used was a Deterministic Finite Automata (DFA) to repr
 
 ## Model Of the Solution
 These is the automata I generated for the language.
-![DFA](Automata.png) <br>
+![DFA](Automate_1.drawio.png) <br>
 I decided to represent my chosen language in a DFA so that the transition to program the Automata in prolog was easier to follow. If I were to use a NFA, the process of implementation would be harder. The analysis between them was followed by the resume given in (GeeksforGeeks, 2025).
 
 ## Implementation in prolog
